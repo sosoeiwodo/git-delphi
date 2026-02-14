@@ -10,6 +10,8 @@ type
   TfmMain = class(TForm)
     Edit1: TEdit;
     Memo1: TMemo;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -22,5 +24,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfmMain.Button1Click(Sender: TObject);
+begin
+  Memo1.Lines.Add('오늘 날짜: ' + DateToStr(Date));
+end;
 
 end.
