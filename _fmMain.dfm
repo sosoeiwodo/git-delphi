@@ -29,4 +29,13 @@ object fmMain: TfmMain
       'Memo1')
     TabOrder = 1
   end
+  object Button1: TButton
+    Left = 512
+    Top = 56
+    Width = 81
+    Height = 25
+    Caption = '오늘 날짜'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
 end
